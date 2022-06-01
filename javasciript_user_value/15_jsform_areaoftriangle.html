@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function hiarea()
+    {
+        let l=document.getElementById("txtlength").value;
+        let b=document.getElementById("txtbreadth").value;
+        document.getElementById("spanans").innerText=(0.5*l*b);
+    }
+</script>
+<body>                                                                                                                                                                                                                                     
+    <form>
+        <input type="text" id="txtlength" placeholder="Length"><br>
+        <input type="text" id="txtbreadth" placeholder="Breadth"><br>
+
+        <br><input type="button" value="submit" onclick="hiarea();"><br><br>
+
+        Area of Triangle <span id="spanans"></span>
+    </form>
+</body>
+</html>

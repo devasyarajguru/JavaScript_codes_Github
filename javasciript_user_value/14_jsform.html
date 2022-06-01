@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+        function hiint()
+        {
+            let p=document.getElementById("txtamount").value;
+            let r=document.getElementById("txtrate").value;
+            let t=document.getElementById("txttime").value;
+            document.getElementById("spanans").innerText=(p*r*t)/100;
+        }
+</script>
+
+<body>
+    <form>
+        <input type="text" id="txtamount" placeholder="Amount"><br>
+        <input type="text" id="txtrate" placeholder="Rate"><br>
+        <input type="text" id="txttime" placeholder="Time"><br>
+
+        <br><input type="button" value="submit" onclick="hiint();"><br>
+        <br>
+        Interest <span id="spanans"></span>
+    </form>
+</body>
+</html>
