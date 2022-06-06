@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hialertadd(){
+        let a = parseInt(prompt("Enter 1st number"));
+        let b = parseInt(prompt("Enter 1st number"));
+
+        alert("Addition==>" + (a+b));
+
+    }
+    function hialertsub(){
+        let a = prompt("Enter 1st number");
+        let b = prompt("Enter 1st number");
+
+        alert("Subtraction==>" + (a-b));
+
+    }
+    function hialertmul(){
+        let a = prompt("Enter 1st number");
+        let b = prompt("Enter 1st number");
+
+        alert("Multiplication==>" + (a*b));
+
+    }
+    function hialertdiv(){
+        let a = prompt("Enter 1st number");
+        let b = prompt("Enter 1st number");
+
+        alert("Divison==>" + (a/b));
+
+    }
+
+</script>
+<body>
+    <input type="radio" name="calc" id="add" onclick="hialertadd()">Addition<br>
+    <input type="radio" name="calc" id="sub" onclick="hialertsub()">Subtraction  <br>
+    <input type="radio" name="calc" id="mul" onclick="hialertmul()">Multiplication<br>
+    <input type="radio" name="calc" id="div" onclick="hialertdiv()">Division<br>
+
+</body>
+</html>
