@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function histring(){
+    let str=document.getElementById("txtname").value;
+    document.getElementById("spanstring").innerText=(str);
+   
+    
+    let i,ch;
+    let c=0;
+
+    for(i=str.length-1;i>=0;i--){
+        ch=str[i];
+        if (ch=='a' || ch=='i' || ch=='e' ||  ch=='o' || ch=='u')
+        {
+            c++;
+            document.getElementById("spanstring2").innerHTML+=(c);
+        }
+
+        else
+        {
+            document.getElementById("spanstring2").innerHTML+=(ch);
+        }
+
+       
+}
+    }
+
+    
+</script>
+<body>
+    <form>
+       Enter Text:<input type="text" id="txtname" placeholder="Text"><br><br>
+       <input type="button" value="Submit" onclick="histring();"> <br><br>
+
+       Your Text: <span id="spanstring"></span><br>
+       Reversed Text in Vowels:<span id="spanstring2"></span>
+        
+      
+       
+
+    </form>
+</body>
+</html> 
