@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hihidden1(){
+        document.getElementById("sem1").style.visibility="visible";
+        document.getElementById("sem2").style.visibility="hidden";
+        document.getElementById("sem3").style.visibility="hidden";
+        document.getElementById("sem4").style.visibility="hidden";
+    }
+    function hihidden2(){
+        document.getElementById("sem2").style.visibility="visible";
+        document.getElementById("sem1").style.visibility="hidden";
+        document.getElementById("sem3").style.visibility="hidden";
+        document.getElementById("sem4").style.visibility="hidden";
+    }
+    function hihidden3(){
+        document.getElementById("sem3").style.visibility="visible";
+        document.getElementById("sem1").style.visibility="hidden";
+        document.getElementById("sem2").style.visibility="hidden";
+        document.getElementById("sem4").style.visibility="hidden";
+    }
+    function hihidden4(){
+        document.getElementById("sem4").style.visibility="visible";
+        document.getElementById("sem1").style.visibility="hidden";
+        document.getElementById("sem2").style.visibility="hidden";
+        document.getElementById("sem3").style.visibility="hidden";
+    }
+    function hideall(){
+        document.getElementById("sem1").style.visibility="hidden";
+        document.getElementById("sem2").style.visibility="hidden";
+        document.getElementById("sem3").style.visibility="hidden";
+        document.getElementById("sem4").style.visibility="hidden";
+        
+    }
+
+
+</script>
+<body onload="hideall();">
+    <style>
+        .topright {
+  position: absolute;
+  top: 22%;
+  width: 5%;
+  font-size: 18px;
+  text-align: center;
+}
+    </style>
+       <input type="radio"  name="semester" onclick="hihidden1();">Sem1<br>  
+       <input type="radio"  name="semester" onclick="hihidden2();">Sem2    <br>
+       <input type="radio"  name="semester" onclick="hihidden3();">Sem3    <br>
+       <input type="radio"  name="semester" onclick="hihidden4();">Sem4  <br>
+
+        <div id="sem1" class="topright">
+        <b>Sem-1</b>
+        C language<br>
+        Physics<br>
+        Electrical engineering <br>
+        Maths<br>
+       </div>
+
+    <div id="sem2" class="topright">
+    <b>Sem-2</b>
+     Python<br>
+     Physics-2<br>
+     Java<br>
+     c++<br>
+    </div>
+
+    <div id="sem3" class="topright">
+    <b>Sem-3</b>
+     PHP <br>
+     HTML<br>
+     CSS<br>
+     Javascript<br>
+    </div>
+
+    <div id="sem4" class="topright">
+    <b>Sem-4</b>
+     SQL<br>
+     .NET<br>
+     Data Science<br>
+     Computer networks<br>
+    </div>
+</body>
+</html>
