@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hibulbon(){
+        document.getElementById("bulb1").src=("pic_bulbon.gif");
+    }
+    function hibulboff(){
+        document.getElementById("bulb1").src=("pic_bulboff.gif");
+
+    }
+</script>
+<body>
+    <b>Select</b>
+    <input name = "bulb" value="ON" type="radio" onclick="hibulbon();">ON
+    <input name = "bulb" value="OFF" type="radio" onclick="hibulboff();">OFF 
+    
+    <img src="pic_bulboff.gif" id="bulb1"></imgsrc> 
+
+</body>
+</html>

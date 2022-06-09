@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hibulb()
+    {
+        var x = document.getElementById("bulbchange").value;
+
+        if (x=="ON")
+        {
+            document.getElementById("bulb1").src="pic_bulbon.gif";
+
+        }
+
+        else if(x=="OFF")
+        {
+            document.getElementById("bulb1").src="pic_bulboff.gif";
+        }
+    }
+</script>
+<body>
+    <b>Select</b>
+    <select id="bulbchange" onchange="hibulb();">
+        <option value="ON">ON</option>
+        <option value="OFF">OFF</option>
+    </select>
+    <img src="pic_bulboff.gif" id="bulb1"></imgsrc>
+</body>
+</html>
