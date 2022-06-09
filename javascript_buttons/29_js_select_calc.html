@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function hicalc()
+    {
+        var x = document.getElementById("calc").value;
+        
+        let n1=parseInt(prompt("Enter Num1"));
+        let n2=parseInt(prompt("Enter Num2"))   ;
+
+        if(x=="add"){
+           alert("Addition:"+(n1+n2)); 
+        }
+
+        
+        else if(x=="sub"){
+           alert("Subtraction:"+(n1-n2)); 
+        }
+
+        
+        else if(x=="mul"){
+           alert("Multiplication:"+(n1*n2)); 
+        }
+
+        
+        else if(x=="div"){
+           alert("Division:"+(n1/n2)); 
+        }
+    }
+
+</script>
+<body>
+    <b>Condition</b>
+    <select id="calc" onchange="hicalc();">
+        <option value="add">Addition</option>
+        <option value="sub">Subtraction</option>
+        <option value="mul">Multiplication</option>
+        <option value="div">Division</option>
+    </select>
+</body>
+</html>
