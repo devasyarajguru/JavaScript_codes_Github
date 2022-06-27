@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function hiking()
+{
+    document.getElementById("kingimg").src=("kingcard.webp")
+}
+
+function hiqueen()
+{
+    document.getElementById("queenimg").src=("queen2.jpg")
+}
+
+function hijack()
+{
+    document.getElementById("jackimg").src=("jack.webp")
+}
+
+function hiace()
+{
+    document.getElementById("aceimg").src=("ace2.svg.png")
+}
+
+</script>
+
+<body>
+    <b>Select Card</b><br><br><br>
+    <img src="card.jpg" id="kingimg"  width="10%" onclick="hiking();">           
+    <img src="card.jpg" id="queenimg" width="10%" onclick="hiqueen();">           
+    <img src="card.jpg" id="jackimg"  width="10%" onclick="hijack();">           
+    <img src="card.jpg" id="aceimg"   width="10%" onclick="hiace();">           
+</body>
+</html>
