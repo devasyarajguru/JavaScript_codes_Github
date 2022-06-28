@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function himax()
+    {
+       let str = document.getElementById("textname").value;
+       let str2 = "";
+       let i;
+       let max = str[0];
+
+       for(i=0;i<str.length;i++)
+       {
+        //str2 = str.charCodeAt(i);
+        //alert(str2);
+
+        if(str[i]>max)
+        {
+            max = str[i];
+        }
+       }
+
+       document.getElementById("maxstring").innerHTML=max;
+    }
+</script>
+<body>
+    <form>
+        Enter Text: <input type="text" id="textname" placeholder="text"><br><br>
+        <input type="button" value="Submit" onclick="himax();"><br>
+
+        Max character: <span id="maxstring"></span>
+    </form>
+</body>
+</html>
