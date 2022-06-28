@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="j24.css">
+</head>
+<script>
+    function conprint(){
+
+        let i,a;
+        let str = document.getElementById("text1").value;
+        document.getElementById("convert").innerText=(str);
+        for(i=0; i<str.length; i++){
+            a=str[i];
+        if(a =="a" || a =="e" || a =="i" || a =="o" || a =="u")
+        {
+            a=7;
+            document.getElementById("convert").innerHTML+=(a);
+        }
+        else{
+            alert("hii");
+        }
+    }
+    }
+</script>
+
+<body>
+    <h3>Enter the Text:-</h3>
+    <textarea id="text1"></textarea>
+    <br>
+    <br>
+<div>
+        <button id="btn" onclick="conprint()">Convert</button>
+</div>
+<br>
+<div>
+    <h3>conver:-</h3>
+        <span id="convert"></span>
+</div>
+</body>
+
+</html>
