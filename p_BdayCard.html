@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bday{
+        border: 10px solid black;
+        border-width: 5px;
+        text-align: center;
+        height: 300px;
+        color: aqua;
+    }
+</style>
+<script>
+        function hibdaycard()
+        {
+           let str = document.getElementById("txt1").value;
+           document.getElementById("txt2").innerHTML=(str);
+
+           let str3 = document.getElementById("txtarea").value;
+           document.getElementById("txtarea2").innerHTML=(str3);
+
+            if (document.getElementById("Red").checked==true)
+            {
+                document.getElementById("card").style.backgroundColor="red";
+            }
+            else if (document.getElementById("Blue").checked==true)
+            {
+                document.getElementById("card").style.backgroundColor="blue";
+            }
+            else if (document.getElementById("Yellow").checked==true)
+            {
+                document.getElementById("card").style.backgroundColor="yellow";
+            }
+            else if (document.getElementById("Green").checked==true)
+            {
+                document.getElementById("card").style.backgroundColor="green";
+            }
+        }
+            function printDiv() {
+            var divContents = document.getElementById("card").innerHTML;
+            var a = window.open('', '', 'height=500, width=500');
+            a.document.close();
+            a.print();
+        
+        }
+</script>
+<body>
+    <form>
+        <input type="text" id="txt1"><br><br>
+        <input type="radio" id="Red">Red
+        <input type="radio" id="Yellow">Yellow
+        <input type="radio" id="Green">Green
+        <input type="radio" id="Blue">Blue
+        </select><br><br>
+        <textarea  id="txtarea"></textarea><br><br>
+        <input type="button" value="Submit" onclick="hibdaycard();"><br><br>
+        <input type='button' id="btnprint" value="print" onclick="window.print();" onclick="printDiv();"><br><br>  
+    </form>
+    
+        <div class="bday" id="card">
+            <h1><span id="txt2"></h1><br>
+            <h1><span id="txtarea2"></h1>
+            
+        </div>
+</body>
+</html>
