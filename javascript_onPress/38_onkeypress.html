@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let max = 0; 
+    let str = 0;
+
+    function chk(event)
+    {
+     if(str==0)
+     {
+        max = event.keyCode;
+     }
+     str++;
+     if(max<event.keyCode)
+     {
+        max = event.keyCode;
+     }
+
+      document.getElementById("max1").innerHTML=(String.fromCharCode(max));
+
+    }
+</script>
+<body>
+    <form>
+        Text:<input type="text" id="textname" placeholder="Enter your text" onkeypress="chk(event);"><br> <br>
+
+        Max character:<span id="max1"></span>
+    </form>
+</body>
+</html>

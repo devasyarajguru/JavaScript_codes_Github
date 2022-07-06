@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+       let str;
+       function chk(event){
+        a = (event.keyCode) + 1;
+        // alert(a);
+        let char = String.fromCharCode(a);
+
+        document.getElementById("text2").innerHTML=(char);
+
+       }
+
+</script>
+<body>
+    <form>
+        Text: <input type="text" onkeypress="chk(event);"><br><br>
+        Text2:<span id="text2"></span>
+    </form>
+</body>
+</html>
