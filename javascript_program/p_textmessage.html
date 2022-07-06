@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+        function hitext()
+        {
+           let a = document.getElementById("txt1").value;
+
+           if(a=='')
+           {
+            alert("Please enter a message");
+           }
+
+           else
+           {
+            alert("Successfull!");
+           }
+        }
+
+
+</script>
+<body>
+    <form>
+        Enter Text: <input type="text" placeholder="enter text" id="txt1"><br><br>
+        <input type="button" value="submit" onclick="hitext();">
+    </form>
+</body>
+</html>

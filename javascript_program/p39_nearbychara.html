@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let diff = 0;
+    let n=0;
+
+    function hinear(event)
+    {
+      if (n==0)
+      {
+        diff=Math.abs(event.keyCode=107);
+      }
+      n++;
+     // alert(diff);
+    
+     if (diff>Math.abs(event.keyCode-107))
+     {
+        diff=Math.abs(event.keyCode-107);
+     }
+
+     if ((event.keyCode-107)>0)
+     {
+        document.getElementById("nearby").innerHTML=String.fromCharCode(diff+107);
+     }
+
+    else if((event.keyCode-107)<0)
+    {
+        document.getElementById("nearby").innerHTML=String.fromCharCode(107-diff);
+    }
+    }
+
+</script>
+<body>
+    <form>
+        Character: <input type="text" id="txt1" placeholder="enter your character" onkeypress="hinear(event
+        );"><br>
+        Near By:<span id="nearby"></span>
+     </form>
+</body>
+</html>

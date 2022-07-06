@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function higender()
+    {
+        if(document.getElementById("male").checked==true)
+        {
+            document.getElementById("spantext").innerHTML=("Done");
+        }
+        
+        else if(document.getElementById("female").checked==true)
+        {
+            document.getElementById("spantext").innerHTML=("Done");
+        }
+        
+        else if(document.getElementById("other").checked==true)
+        {
+            document.getElementById("spantext").innerHTML=("Done");
+        }
+
+        else{
+            document.getElementById("spantext").innerHTML=("Please Enter Text");
+        }
+
+    }
+
+</script>
+<body>
+    <form>
+       Male <input type="radio" id="male"><br>
+       Female <input type="radio" id="female"><br>
+       Other <input type="radio" id="other"><br><br>
+       <input type="button" value="submit" onclick="higender();"><br><br>                                                                                                                                                                                                                         <span id="spantext"></span>
+    </form>
+</body>
+</html>
