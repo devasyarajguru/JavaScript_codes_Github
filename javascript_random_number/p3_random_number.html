@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+       
+
+    function higuess()
+    {
+        document.getElementById("random1").innerHTML = Math.floor((Math.random()*10) + 1);
+        document.getElementById("random2").innerHTML = Math.floor((Math.random()*10) + 1);
+       
+        
+    }
+
+    function hirand()
+    {
+
+       let a = parseInt(document.getElementById("random1").innerHTML);
+       let b = parseInt(document.getElementById("random1").innerHTML);
+
+       let z = a + b;
+
+       let m = document.getElementById("guess").value;
+       
+        if(z==m)
+        {
+            alert("success");
+        }
+
+        else
+        {
+            alert("Try 1 more time");
+        }
+    
+    }
+    
+    
+</script>
+<body onload="higuess();">
+    <p>
+    
+        Random number 1: <span id="random1"></span><br><br>
+        Random number 2: <span id="random2"></span>
+        <h3>Guess the addition number:<input type="text" id="guess"><h3>
+            <input type="button" value="submit" onclick="hirand();"> 
+
+    </p>
+</body>
+</html>

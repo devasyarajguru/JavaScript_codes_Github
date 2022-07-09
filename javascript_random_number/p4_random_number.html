@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Captca</title>
+    <style>
+        body {
+            background-color: lightpink;
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 450px;
+            margin-top: 50px;
+        }
+        
+        #btn {
+            background-color: black;
+            color: chartreuse;
+            height: 40px;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+        
+        #num1,
+        #num2 {
+            font-size: larger;
+            /* color: transparent; */
+        }
+        
+        #span {
+            width: 200px;
+        }
+        
+        #img1,
+        #img {
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+
+</head>
+<script>
+    function hi() {
+        let difference = 9;
+        let rand = Math.random();
+        rand = Math.floor(rand * difference);
+        document.getElementById("num1").innerHTML = rand;
+        if (rand == 1) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascipt_photos\\img1.png ";
+        } else if (rand == 2) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascript_photos\\img2.png ";
+        } else if (rand == 3) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascript_photos\\img3.png ";
+        } else if (rand == 4) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascript_photos\\img4.png ";
+        } else if (rand == 5) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascript_photos\\img5.png ";
+        } else if (rand == 6) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascript_photos\\img6.png ";
+        } else if (rand == 7) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascript_photos\\img7.png ";
+        } else if (rand == 8) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascipt_photos\\img8.png ";
+        } else if (rand == 9) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascript_photos\\img9.png ";
+        }
+
+        else if (rand == 0) {
+            document.getElementById("num1").innerHTML = rand;
+            document.images["img1"].src = "..\\javascript_photos\\0img.png ";
+        }
+
+        
+        let rand2 = Math.random();
+        rand2 = Math.floor(rand2 * difference); 
+        document.getElementById("num2").innerHTML = rand2;
+        if (rand2 == 1) {
+            document.getElementById("num2").innerHTML = rand2;
+            document.images["img"].src = "..\\javascript_photos\\img1.png ";
+        } else if (rand2 == 2) {
+            document.getElementById("num2").innerHTML = rand2;
+            document.images["img"].src = "..\\javascript_photos\\img2.png ";
+        } else if (rand2 == 3) {
+            document.getElementById("num2").innerHTML = rand2;
+            document.images["img"].src = "..\\javascript_photos\\img3.png ";
+        } else if (rand2 == 4) {
+            document.getElementById("num2").innerHTML = rand2;
+            document.images["img"].src = "..\\javascript_photos\\img4.png ";
+        } else if (rand2 == 5) {
+            document.getElementById("num2").innerHTML = rand2;
+            document.images["img"].src = "..\\javascript_photos \\img5.png ";
+        }
+
+        else if (rand2 == 6) {
+            document.getElementById("num2").innerHTML = rand2;
+            document.images["img"].src = "..\\javascript_photos\\img6.png ";
+        } else if (rand2 == 7) {
+            document.getElementById("num2").innerHTML = rand2;
+            document.images["img"].src = "..\\javascript_photos\\img7.png ";
+        } else if (rand2 == 8) {
+            document.getElementById("num2").innerHTML = rand;
+            document.images["img"].src = "..\\javascipt_photos\\img8.png ";
+        }
+          else if (rand2 == 9) {
+            document.getElementById("num2").innerHTML = rand2;
+            document.images["img"].src = "..\\javascript_photos\\img9.png ";
+        }
+
+        else if (rand2 == 0) {
+            document.getElementById("num2").innerHTML = rand2;
+            document.images["img"].src = "..\\javascript_photos\\0img.png ";
+        }
+    }
+
+    function random() {
+        let rand = parseInt(document.getElementById("num1").innerHTML);
+        let rand2 = parseInt(document.getElementById("num2").innerHTML);
+        let sum = rand + rand2;
+        alert(rand);
+        alert(rand2);
+
+        let c = parseInt(document.getElementById("nm").value);
+        if (c == sum) {
+            alert("Successful!!!")
+        } else {
+            alert("Please try Again!")
+        }
+    }
+</script>
+
+<body onload="hi()">
+    <h2> Random numbers till 10</h2>
+
+
+    <span class="input-group-text" id="span">First Number</span>
+    <span id="num1"></span>
+    <img src="" id="img1">
+    <span class="input-group-text" id="span">second Number</span>
+    <span id="num2"></span>
+    <img src="" id="img">
+    <div class="input-group ">
+        <span class="input-group-text"><b>Sum</b></span><br>
+        <input type="text" class="form-control" id="nm" name="nm">
+    </div>
+    <div class="btn-click">
+        <button class="btn btn-info" id="btn" onclick="random();">click me</button>
+    </div>
+   
+</body>
+
+</html>
