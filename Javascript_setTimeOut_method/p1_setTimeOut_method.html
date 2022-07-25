@@ -6,17 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+        .bday
+        {
+            font-size: 50px;
+            text-align: center;
+            
+        }
+        body
+        {
+            border: 20px solid black;
+            box-sizing: border-box;
+            border-radius: 10px;
+            width: 3000px;
+            height: 900px;
+            padding: 30px;
+        }
+</style>
 <script>
-    const myTimeout = setTimeout(hibday,5000);
+    const myTimeout = setTimeout(hibday,10000);
+    const myTimeout1 = setTimeout(hired,2000);
+    const myTimeout2 = setTimeout(hiyellow,3000);
+    const myTimeout3 = setTimeout(higreen,4000);
+    const myTimeout4 = setTimeout(hipink,5000);
+    const myTimeout5 = setTimeout(hipurple,6000);
+    const myTimeout6 = setTimeout(hiorange,7000);
+    const myTimeout7 = setTimeout(hiblue,8000);
+    const myTimeout8 = setTimeout(hiaqua,9000);
+    
     function hibday()
     {
         document.getElementById("demo").innerHTML="Happy Birthday!!"
     }
+    function hired()
+    {
+        document.bgColor = ("red");
+    }
+    function hiyellow()
+    {
+        document.bgColor = ("yellow");
+    }
+    function higreen()
+    {
+        document.bgColor = ("green");
+    }
+    function hipink()
+    {
+        document.bgColor = ("pink");
+    }
+    function hipurple()
+    {
+        document.bgColor = ("purple");
+    }
+    function hiorange()
+    {
+        document.bgColor = ("orange");
+    }
+    function hiblue()
+    {
+        document.bgColor = ("blue");
+    }
+    function hiaqua()
+    {
+        document.bgColor = ("aqua");
+    }
 </script>
 <body>
-
+        <div class="bday">
         <h1>The Set Time Out Method</h1>
-        <h2>Wait for 5 seconds!:</h2>
+        <h2>Wait for 10 seconds!:</h2>
         <h2 id="demo"></h2>
+        </div>
 </body>
 </html>
