@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruit = prompt("Which fruit to buy");
+        let howmany = prompt("How many?");
+        let biscuit = prompt("Which biscuit to buy");
+        let biscuit_price = prompt("Which biscuit price to buy?");
+
+        let bag = {
+            [fruit]:howmany, //fruit is key and howmany is value
+            [biscuit]:biscuit_price // biscuit is key and biscuit_price is value
+        }; 
+
+        alert(bag[fruit]+"-"+fruit);
+        alert(bag[biscuit]+"-"+biscuit);
+    </script>
+</body>
+</html>

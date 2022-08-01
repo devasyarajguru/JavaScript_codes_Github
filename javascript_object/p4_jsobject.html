@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="spandata"></span>
+
+    <script>
+        let biodata = {
+            myname: {
+                    firstname:"Devasya",
+                    lastname:"Rajguru",
+            },
+            age:20,
+            contact:7984817705,
+            "like birds":true,
+        }
+       // console.log(biodata['like birds']); // key elements can also be accessed by this way!
+
+        let fname = biodata.myname.firstname;
+        let lname = biodata.myname.lastname;
+        let myage = biodata.age;
+        let birds = biodata['like birds'];
+
+        let merge = fname + "<br>" + lname  + "<br>" + myage + "<br>" + birds ;
+        document.getElementById("spandata").innerHTML = merge;
+        
+    </script>
+</body>
+</html>

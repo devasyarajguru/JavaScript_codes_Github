@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user =  // user object 
+        {
+            name:"vraj",  // name - key and "vraj" - value
+            sizes:{       // sizes - key and {height:180,width:50} - value
+                height:180, // height - key and 180 - value
+                width:50, // width - key and 50 - value
+                area:{
+                    cm:40,
+                    m:8
+                }
+            }     
+        };
+        console.log(user.sizes.width); // width's value is obtained here
+        console.log(user.sizes) 
+        console.log(user.sizes.area.cm) // cm's value is obtained here
+        console.log(user['name']) // square bracket method
+     
+    </script>
+</body>
+</html>
