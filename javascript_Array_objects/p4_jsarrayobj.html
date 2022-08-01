@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+            name:"devasya",
+            sname:"rajguru",
+            age:20,
+            contact:7984817705,
+
+            getname:function() // getname function is declared where getname is key and function is value //
+            {
+                return this.name + this.sname ;
+            },
+            getage:function() // getage function is declared where getage is key and function is value
+            { 
+                return  "Age = " + this.age;
+            },
+
+            getid:function() 
+            {
+                return this.name + this.age ;
+            }
+        }
+        document.writeln(user.getname() +"<br>");
+        document.writeln(user.getage() + "<br>");
+        document.writeln(user.getid ());
+    </script>
+</body>
+</html>

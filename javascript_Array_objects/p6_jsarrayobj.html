@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a = {}; 
+    let b = a;  // b variable is assigned to object a
+    // here a and b are reffered to as same object
+
+    document.writeln(a==b); // value is same
+    document.writeln(a===b);// value and datatype both are same
+
+    let a1 = {};
+    let b1 = {};
+    // here a and b are reffered to as different object
+
+    //alert(typeof(a));
+    //alert(typeof(b));
+
+    document.writeln(a1==b1); // value is not same as a and b are objects aslo with empty value but they are different object values  
+
+    document.writeln(a1===b1);// value is different but data type is same ----- as per concept it will return False 
+    </script>
+</body>
+</html>
