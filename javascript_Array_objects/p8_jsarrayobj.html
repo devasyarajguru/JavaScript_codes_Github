@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const target = {a:1,b:2,c:8};
+        const source = {a:4,b:6,c:9 };
+        const f = {a:65,b:90,c:45};
+        const e = {a:11,b:22,c:33};
+
+        // console.log(target);
+        // object assign method is used
+
+        const returnedtarget = Object.assign(source,target,f,e); //arguments are taken and assigned to returnedtarget variable
+        // first argument elements will be assigned as the object assigned variable elements 
+
+        
+        console.log(target); // target elements are printed
+        console.log(f); // f elements are printed 
+        console.log(source); // e elements are printed  // returnedtarget elements are printed
+        console.log(e); // e elements are printed              
+        console.log(returnedtarget); // e elements are printed
+    
+    </script>
+</body>
+</html>
