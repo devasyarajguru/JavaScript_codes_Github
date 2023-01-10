@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Arrow Function</h2>
+    <h4>The multiplication of two number is:</h4>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        let myfunction = (a, b) => a * b; //Arrow function is used
+        document.getElementById("demo").innerHTML=myfunction(4,8);
+
+        var hello , hello1 , hello2 ,hello3; // variable is declared
+
+        hello = function() // Without Arrow Function 
+        {
+            return "Hello World"
+        }
+        document.getElementById("demo1").innerHTML = hello();
+ 
+        hello1 = () => "My name is Devasya" // Arrow Functions return value by Default
+        document.getElementById("demo2").innerHTML=hello1();
+
+        hello2 = (par) => "Silver" + par; // Arrow Functions with parameters
+        document.getElementById("demo3").innerHTML = hello2("Oak");
+
+        hello3 = par => "Computer" + par; // Arrow Functions without paranthesis
+        document.getElementById("demo4").innerHTML = hello3("Engineering");
+        
+    </script>
+</body>
+</html>
