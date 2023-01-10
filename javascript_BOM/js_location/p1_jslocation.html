@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+The window.location.href property returns the URL of the current page.
+The window.location.hostname property returns the name of the internet host (of the current page).
+The window.location.pathname property returns the pathname of the current page.
+The window.location.protocol property returns the web protocol of the page.
+    -->
+<h2>Javascript Location</h2>
+<h4>The window.location object</h4>
+
+<p id="p1"></p>
+<script>
+    document.getElementById("p1").innerHTML = "The full Url of this page is" + window.location.href + "<br>Page Host name is:" + window.location.hostname + "<br>Page Path is:" + window.location.pathname + "<br>Page protocol is:" + window.location.protocol + "<br>Page port is:" + window.location.port;
+</script>
+</body>
+</html>

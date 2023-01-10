@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Window Navigator</h2>
+    <h3>The window.navigator object contains information about the visitor's browser</h3>
+
+    <p id="p1"></p>
+
+    <script>
+        document.getElementById("p1").innerHTML = "Cookies enable is:" + navigator.cookieEnabled + "<br>navigator.appName is:" + navigator.appName + "<br>navigator.appCodeName is:" + navigator.appCodeName  + "<br>navigator.product name is:" + navigator.product +  "<br>navigator.appVersion is:" + navigator.appVersion + "<br>navigator.userAgent is:" + navigator.userAgent + "<br>navigator.platform is:"+ navigator.platform + "<br>navigator.language is:" + navigator.language + "<br>Browser is online:" + navigator.onLine + "<br>Java_enable:" + navigator.javaEnabled(  );
+    </script>
+</body>
+</html>
